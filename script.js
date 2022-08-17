@@ -18,9 +18,9 @@ var computerScore = 0;
 var ties = 0;
 
 // Function to play one round
-function playRound(playerSelection, computerSelection) {
-    let computerWinsRound = "You lost... "+playerSelection+" beats "+computerSelection.toLowerCase();
-    let playerWinsRound = "You won! "+computerSelection+" beats "+playerSelection.toLowerCase();
+function playRound(computerSelection, playerSelection) {
+    let playerWinsRound = "You won! "+playerSelection+" beats "+computerSelection.toLowerCase();
+    let computerWinsRound = "You lost... "+computerSelection+" beats "+playerSelection.toLowerCase();
     let tie = "It's a tie!";
     if (playerSelection === computerSelection) {
         ties++;
